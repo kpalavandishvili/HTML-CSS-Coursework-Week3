@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    /* z-index: -1; */
 }
 
 body {
@@ -16,7 +17,6 @@ body {
 #main {
     width: 100%;
     height: 100vh;
-
 }
 
 nav {
@@ -24,6 +24,8 @@ nav {
     height: 80px;
     background-color: #0009;
     line-height: 80px;
+    position: fixed;
+    z-index: 1;
 }
 
 nav ul {
@@ -54,7 +56,7 @@ nav ul li a {
     justify-content: flex-end;
     font-size: small;
     margin-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 140px;
     margin-right: 50px;
 }
 
@@ -121,3 +123,76 @@ nav ul li a {
  td{
      padding: 25px;
  }
+
+ /* Footer */
+ footer{
+    background-color: #0009;
+
+    
+    width: 100%;
+    height: 100%;
+     font-family: "Open Sans";
+     padding-top: 40px;
+     color: #fff;
+
+ }
+ .footer-content{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+ }
+
+ .footer-content h3{
+     font-size: 1.8rem;
+     font-weight: 400;
+     text-transform: capitalize;
+     line-height: 3rem;
+ }
+ .footer-content{
+     max-width: 500px;
+     margin: 10px auto;
+     line-height: 28px;
+     font-size: 14px;
+     }
+     .socials{
+         list-style: none;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 1rem 0 3rem 0;
+     }
+     .socials li{
+         margin: 0 10px;
+
+     }
+     .socials a{
+         text-decoration: none;
+         color: #fff;
+     }
+     .socials a i{
+         font-size: 1.1rem;
+         transition:color .4s ease;
+     }
+     .socials a:hover i{
+         color:#CC7A86;
+     }
+     .footer-bottom {
+        background-color: #0009;
+
+        width: 100%;
+         padding-top: 20px 0;
+         text-align: center;
+     }
+     .footer-bootom p{
+         font-size: 14px;
+         word-spacing: 2px;
+         text-transform: capitalize;
+     }
+     .footer-bottomn span{
+         text-transform: uppercase;
+         opacity: .4;
+         font-weight: 200;
+     }
+ /* End Footer */
